@@ -15,9 +15,11 @@ public class PasswordGenerator {
 		int giornoNascita = 2;
 		int meseNascita = 9;
 		int annoNascita = 1994;
+		
 		int somma = giornoNascita + meseNascita + annoNascita;
 		
-		String password = nome + cognome + colorePreferito + somma;
+		String password = nome +"-"+ cognome +"-"+ colorePreferito +"-"+ somma;
+		
 		System.out.println("Password: " + password);
 		
 		
