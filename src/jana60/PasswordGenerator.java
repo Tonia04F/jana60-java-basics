@@ -1,5 +1,7 @@
 package jana60;
 
+import java.util.Scanner;
+
 public class PasswordGenerator {
 
 	public static void main(String[] args) {
@@ -24,8 +26,40 @@ public class PasswordGenerator {
 		
 		
 		
+		//RIFACCIO CON SCANNER
+		String name;
+		String surname;
+		String color;
+		int giorno;
+		int mese;
+		int anno;
 		
 		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("inserisci nome: ");
+		name = sc.nextLine();
+		System.out.println(name);
+		
+		System.out.println("inserisci cognome: ");
+		surname = sc.nextLine();
+		
+		System.out.println("inserisci colore preferito: ");
+		color = sc.nextLine();
+		
+		System.out.println("inserisci giorno di nascita: ");
+		giorno = sc.nextInt();
+		
+		System.out.println("inserisci mese di nascita: ");
+		mese = sc.nextInt();
+		
+		System.out.println("inserisci anno di nascita: ");
+		anno = sc.nextInt();
+		
+		int sum = giorno + mese + anno;
+		
+		String pass = name +"-"+ surname +"-"+ color +"-"+ sum;
+		
+		System.out.println("Password: " + pass);
 		
 
 		
